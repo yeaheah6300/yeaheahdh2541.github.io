@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<meta http-equiv="Content-Type" charset="UTF-8" 
+      name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+<style type="text/css">
+
+body{
+  margin: 0;
+  font-family: 나눔바른고딕;
+}
+ a:link { color: black; text-decoration: none;}
+ a:visited { color: black; text-decoration: none;}
+ a:hover { color: red; text-decoration: none;}
+ ul{
+    list-style:none;
+    }
+
+    .author .photo {
+    float:left;
+    padding: 8px;
+    margin: 7px;
+    width:50px;
+    height:50px;
+    overflow:hidden;
+    background: white;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image:url("doyeon.jpg");
+    border-radius: 40px;
+}
+img{left: 50%;
+
+margin-left: 30px;}
+
+.title{
+
+  width: 100%;
+  height: 80px;
+  background-color: #E2B779;
+}
+ul{
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+p{
+  margin: 0px;
+  font-size: 3em;
+  line-height: 75px;
+}
+li{
+  font-size:25px;
+}
+span{
+  font-size:1.8em;
+}
+div.bar { 
+  background: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 70px;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #ddd;
+}
+
+.li1{
+  font-size: 25px;
+}
+
+.images{ 
+  width: 52px;
+  height: 52px;
+  align-items: center; 
+  margin: 5px;  
+  z-index: 100;
+  background-repeat: no-repeat;
+}
+
+.grid33{
+  float:  left;
+  width:  33.33%;
+  padding-left: 10%;
+  box-sizing: border-box;
+  z-index: 10;
+  align-items: center;
+  margin:0 auto;
+  text-align: center;
+}
+</style>
+    
+</head>
+  
+<body>
+   <div class="title">
+      <div class="author">
+    <div class="photo"></div>
+</div>
+      <p style="color:#610500;padding-top:2%;">나의이름</p> 
+   </div>
+
+<div class="feed">
+    <div>
+        <ul>
+        <span id="more" style="CURSOR: hand" onclick="if(story.style.display=='none') {story.style.display='';more.innerText='★즐겨찾기'} else {story.style.display='none';more.innerText='★즐겨찾기'}">★즐겨찾기</span>
+        <div id="story" style="display: none">
+<HR>
+      
+            <ul>
+                <li><a href="coffee.html">▶카페베네-아메리카노</a></li>
+                <hr>
+                <li><a href="coffee.html">▶이디야-자몽에이드</a></li>
+            </ul>
+        
+        </div>
+
+        <hr>
+           <span id="more" style="CURSOR: hand" onclick="if(story1.style.display=='none') {story1.style.display='';more.innerText='★나의메모'} else {story1.style.display='none';more.innerText='★나의메모'}">★나의메모 </span>
+            <div id="story1" style="display: none">
+           <hr>
+             <ul>
+                <li>▶이디야-니트로커피</li>
+                <li class="li1">&nbsp;&nbsp;&nbsp;내 입맛에 너무 쓴 것 같다.</li>
+
+                <hr>
+                <li>▶카페베네-아메리카노</li>
+                <li class="li1">&nbsp;&nbsp;&nbsp;시럽 두 번 펌핑하기.</li>
+            </ul>
+    </div>   
+    </div> 
+
+    <div class="bar"> 
+  <div class="grid33">
+    <a href="menu.html">
+    <div class="images" 
+    style="background-image: url('로고/menu1.png');">
+    </div>
+    </a>
+    </div>
+  <div class="grid33">
+  <a href="search.html">
+  <div class="images" 
+  style="background-image: url('search.png');"></div></a>
+  </div>
+  <div class="grid33">
+  <a href="mymenu.html">
+  <div class="images" 
+  style="background-image: url('로고/my1.png');"></div></a>
+  </div>
+  </div>
+</div>
+</body>
+</html> 
